@@ -1,8 +1,7 @@
 package ru.selfmadeperson.flagscountries.di
 
 import dagger.Component
-import ru.selfmadeperson.flagscountries.di.module.AppModule
-import ru.selfmadeperson.flagscountries.di.module.CiceroneModule
+import ru.selfmadeperson.flagscountries.di.module.*
 import ru.selfmadeperson.flagscountries.mvp.presenter.*
 import ru.selfmadeperson.flagscountries.ui.activity.MainActivity
 import javax.inject.Singleton
@@ -10,8 +9,14 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [
+        ApiModule::class,
         AppModule::class,
         CiceroneModule::class,
+        CountryModule::class,
+        DatabaseModule::class,
+        ImageModule::class,
+        RepoModule::class
+
     ]
 )
 
