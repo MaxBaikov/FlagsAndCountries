@@ -2,13 +2,16 @@ package ru.selfmadeperson.flagscountries.mvp.presenter
 
 import io.reactivex.rxjava3.core.Scheduler
 import moxy.MvpPresenter
-import ru.selfmadeperson.flagscountries.mvp.view.FlagGuessView
+import ru.selfmadeperson.flagscountries.mvp.view.CitiesGuessView
 import ru.terrakok.cicerone.Router
 import javax.inject.Inject
 
-class FlagGuessPresenter : MvpPresenter<FlagGuessView>() {
+class CitiesGuessPresenter : MvpPresenter<CitiesGuessView>() {
 
-    @Inject lateinit var router: Router
+    @Inject
+    lateinit var scheduler: Scheduler
+    @Inject
+    lateinit var router: Router
 
 
 
@@ -17,5 +20,4 @@ class FlagGuessPresenter : MvpPresenter<FlagGuessView>() {
     fun backPressed(): Boolean {
         router.exit()
         return true
-    }
-}
+    }}

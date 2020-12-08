@@ -15,6 +15,18 @@ class MainPresenter() : MvpPresenter<MainView>() {
         router.replaceScreen(Screens.FlagGuessScreen())
     }
 
+    fun citiesSelected() {
+        router.replaceScreen(Screens.CitiesGuessScreen())
+    }
+
+    fun flagsSelected() {
+        router.replaceScreen(Screens.FlagGuessScreen())
+    }
+
+    fun countriesSelected() {
+        router.replaceScreen(Screens.CountriesScreen())
+    }
+
     fun backClicked() {
         router.exit()
     }
