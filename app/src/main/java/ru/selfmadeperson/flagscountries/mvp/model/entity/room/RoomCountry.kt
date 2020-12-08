@@ -9,11 +9,11 @@ class RoomCountry (
     var name: String,
     var capital: String,
     var flagUrl: String,
-    var topLevelDomain: List<String>,
-    var callingCodes: List<String>,
+//    var topLevelDomain: List<String>,
+//    var callingCodes: List<String>,
     var region: String,
     var subRegion: String,
     var population: Int,
-    var timeZones: List<String>,
+//    var timeZones: List<String>,
 
 )

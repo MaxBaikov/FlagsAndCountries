@@ -1,6 +1,7 @@
 package ru.selfmadeperson.flagscountries.di.module
 
 import android.widget.ImageView
+import dagger.Module
 import dagger.Provides
 import ru.selfmadeperson.flagscountries.mvp.model.cache.image.IImageCache
 import ru.selfmadeperson.flagscountries.mvp.model.cache.image.room.RoomImageCache
@@ -13,6 +14,7 @@ import java.io.File
 import javax.inject.Named
 import javax.inject.Singleton
 
+@Module
 class ImageModule {
 
     @Named("cacheDir")

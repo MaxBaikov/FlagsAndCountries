@@ -16,12 +16,12 @@ class RoomRestCountriesCache(val db: Database) : ICountriesCache {
                 country.name,
                 country.capital,
                 country.flagUrl,
-                country.topLevelDomain,
-                country.callingCodes,
+//                country.topLevelDomain,
+//                country.callingCodes,
                 country.region,
                 country.subRegion,
                 country.population,
-                country.timeZones,
+//                country.timeZones,
             )
         }
     }
@@ -33,12 +33,12 @@ class RoomRestCountriesCache(val db: Database) : ICountriesCache {
                     country.name,
                     country.capital,
                     country.flagUrl,
-                    country.topLevelDomain,
-                    country.callingCodes,
+//                    country.topLevelDomain,
+//                    country.callingCodes,
                     country.region,
                     country.subRegion,
                     country.population,
-                    country.timeZones,
+//                    country.timeZones,
                 )
             }
             db.countryDao.insert(roomCountries)
