@@ -12,9 +12,14 @@ import javax.inject.Singleton
 @Module
 class RepoModule {
 
+
     @Singleton
     @Provides
-    fun countriesRepo(api: IDataSource, networkStatus: INetworkStatus, cache: ICountriesCache): IRestCountries =
+    fun countriesRepo(
+        api: IDataSource,
+        networkStatus: INetworkStatus,
+        cache: ICountriesCache
+    ): IRestCountries =
         RetrofitRestCountries(api, networkStatus, cache)
 
 }
